@@ -27,6 +27,7 @@ export default {
       //   if (this.activeSpan) {
       this.activeSpan = !this.activeSpan;
       this.disActiveSpan = !this.disActiveSpan;
+      this.$store.dispatch("setActiveMenu");
       //   } else {
       //     this.activeSpan = true;
       //     this.disActiveSpan = true;
