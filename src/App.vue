@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <main-menu />
+    <div class="row">
+      <div class="col-md-10">
+        <router-view />
+      </div>
+      <div class="col-md-2">
+        <side-bar />
+      </div>
     </div>
-    <router-view />
   </div>
 </template>
+
+<script>
+import SideBar from "@/components/SideBar.vue";
+import MainMenu from "./components/MainMenu.vue";
+
+export default {
+  name: "App",
+  components: { SideBar, MainMenu },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -15,18 +29,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  height: 1200px;
+  div.row {
+    margin-right: 0;
   }
 }
 </style>
