@@ -1,0 +1,4 @@
+concerate website: https://www.acclaimcontractors.com.au/
+vue chevron: https://ispal.github.io/vue-chevron/
+for curosar: https://www.codegrepper.com/code-examples/css/add+own+image+in+cursor+using+css
+animate elements on scroll: https://www.vuescript.com/animte-elements-on-scroll/
