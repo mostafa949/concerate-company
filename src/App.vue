@@ -3,9 +3,15 @@
     <main-menu />
     <div class="row">
       <div class="col-md-10">
+        <h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque,
+          voluptates! Pariatur non dolorum qui aliquid dolorem cum ea, vitae vel
+          sit molestiae esse expedita mollitia aspernatur quis delectus quod
+          doloribus.
+        </h3>
         <router-view />
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 upper-sidebar">
         <side-bar />
       </div>
     </div>
@@ -32,6 +38,9 @@ export default {
   height: 1200px;
   div.row {
     margin-right: 0;
+    div.upper-sidebar {
+      z-index: 5;
+    }
   }
 }
 </style>

@@ -70,7 +70,6 @@ export default {
 /* end of Global style (mixin) */
 div.sidebar {
   position: fixed;
-  z-index: 5;
   a {
     display: inline-block;
     // margin: 0 auto;

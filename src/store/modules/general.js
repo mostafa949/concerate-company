@@ -1,20 +1,26 @@
 const General = {
   state: {
-    activeMenu: false,
+    menu: {
+      activeMenu: false, // check if menu active or not ( Default not active )
+      arrowColor: '#1e1e1e' // menu arrow color in sidebar
+    },
   },
   getters: {
     activeMenu(state) {
-      return state.activeMenu;
+      return state.menu.activeMenu;
+    },
+    arrowColor(state) {
+      return state.menu.arrowColor;
     },
   },
   mutations: {
     setActiveMenu(state, checkMenu) {
-      state.activeMenu = checkMenu;
+      state.menu.activeMenu = checkMenu;
     },
   },
   actions: {
     setActiveMenu({ state, commit }) {
-      const checkMenu = state.activeMenu ? false : true;
+      const checkMenu = state.menu.activeMenu ? false : true;
       commit("setActiveMenu", checkMenu);
     },
   },
