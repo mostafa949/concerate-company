@@ -1,15 +1,17 @@
 <template>
   <div class="header">
-    <div class="d-flex header-top">
-      <div class="featured-project">
-        <h2>featured project</h2>
-        <h2>{{ header.featuredProject }}</h2>
-      </div>
-      <div class="location">
-        <h2>location</h2>
-        <h2>{{ header.location }}</h2>
-      </div>
-    </div>
+    <ul class="d-flex header-top list-unstyled">
+      <li>
+        <b>featured project:</b>
+        <p>{{ header.featuredProject }}</p>
+        <span class="dash"></span>
+      </li>
+      <li>
+        <b>location:</b>
+        <p>{{ header.location }}</p>
+        <span class="dash"></span>
+      </li>
+    </ul>
     <img src="@/assets/header1.jpg" alt="" />
   </div>
 </template>
@@ -27,8 +29,28 @@ export default {
 
 <style lang="scss" scoped>
 div.header {
-  div.header-top {
+  ul.header-top {
     position: absolute;
+    padding: 35px;
+    li {
+      text-align: left;
+      margin-right: 55px;
+      color: #f7f7f7;
+      b {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+      p {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      span.dash {
+        width: 30px;
+        height: 2px;
+        background-color: #f7f7f7;
+        display: inline-block;
+      }
+    }
   }
   img {
     width: 100%;

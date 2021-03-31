@@ -1,7 +1,7 @@
 <template>
   <div class="row" :class="[activeMenu ? 'show-menu' : 'main-menu']">
-    <div class="col-md-6 menu-left"></div>
-    <div class="col-md-6 menu-right">
+    <div class="col-md-7 menu-left"></div>
+    <div class="col-md-5 menu-right">
       <div class="menu-side">
         <p>Menu</p>
         <ul class="list-unstyled">
@@ -166,7 +166,7 @@ div.main-menu {
 
 /* show menu class */
 div.show-menu {
-  @include menu(0, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85));
+  @include menu(0, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
   div.menu-left {
     background-color: #fff;
     opacity: 0.7;

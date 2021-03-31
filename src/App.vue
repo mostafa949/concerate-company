@@ -19,6 +19,13 @@ import MainMenu from "./components/MainMenu.vue";
 export default {
   name: "App",
   components: { SideBar, MainMenu },
+  watch: {
+    $route(to, from) {
+      if (to.path !== from.path) {
+        this.$store.commit("setActiveMenu", false);
+      }
+    },
+  },
 };
 </script>
 
@@ -34,7 +41,7 @@ export default {
     margin-right: 0;
     div.upper-sidebar {
       position: absolute;
-      right: 27px;
+      right: 15px;
       z-index: 5;
       padding: 0 !important;
     }

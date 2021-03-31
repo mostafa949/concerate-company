@@ -4,7 +4,7 @@
       ><img src="../assets/main-logo.png" alt="Logo"
     /></router-link>
     <div class="spans">
-      <div class="span-container" @click="test">
+      <div class="span-container" @click="toggle">
         <span :class="[activeSpan ? 'active-span-left' : 'span']"></span>
         <span :class="[disActiveSpan ? 'disactive-span' : 'span']"></span>
         <span :class="[activeSpan ? 'active-span-right' : 'span']"></span>
@@ -23,15 +23,10 @@ export default {
     };
   },
   methods: {
-    test() {
-      //   if (this.activeSpan) {
+    toggle() {
       this.activeSpan = !this.activeSpan;
       this.disActiveSpan = !this.disActiveSpan;
       this.$store.dispatch("setActiveMenu");
-      //   } else {
-      //     this.activeSpan = true;
-      //     this.disActiveSpan = true;
-      //   }
     },
   },
 };
