@@ -12,6 +12,16 @@
         <span class="dash"></span>
       </li>
     </ul>
+    <div class="header-content">
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+        velit.
+      </h3>
+    </div>
+    <div class="slider row">
+      <div class="col-md-6">test one</div>
+      <div class="col-md-6">test two</div>
+    </div>
     <img src="@/assets/header1.jpg" alt="" />
   </div>
 </template>
@@ -52,9 +62,18 @@ div.header {
       }
     }
   }
+  div.slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  div.header-content {
+    position: absolute;
+  }
   img {
     width: 100%;
-    height: 100%;
+    height: 661px;
   }
 }
 </style>

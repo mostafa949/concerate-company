@@ -1,7 +1,7 @@
 <template>
   <div class="row" :class="[activeMenu ? 'show-menu' : 'main-menu']">
-    <div class="col-md-7 menu-left"></div>
-    <div class="col-md-5 menu-right">
+    <div class="col-md-8 menu-left"></div>
+    <div class="col-md-4 menu-right">
       <div class="menu-side">
         <p>Menu</p>
         <ul class="list-unstyled">
