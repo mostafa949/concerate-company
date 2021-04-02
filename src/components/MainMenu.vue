@@ -1,5 +1,9 @@
 <template>
-  <div class="row" :class="[activeMenu ? 'show-menu' : 'main-menu']">
+  <div
+    class="row"
+    :class="[activeMenu ? 'show-menu' : 'main-menu']"
+    v-scroll-lock="activeMenu"
+  >
     <div class="col-md-8 menu-left"></div>
     <div class="col-md-4 menu-right">
       <div class="menu-side">

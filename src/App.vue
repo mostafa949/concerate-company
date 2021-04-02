@@ -36,7 +36,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  // height: 1200px;
+  height: 1800px;
   div.row {
     margin-right: 0;
     div.upper-sidebar {
